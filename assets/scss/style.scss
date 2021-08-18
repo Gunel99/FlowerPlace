@@ -9,10 +9,29 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Exo;
+    src: url(../fonts/Exo/static/Exo-Regular.ttf);
+}
+
+@font-face {
+    font-family: ExoBold;
+    src: url(../fonts/Exo/static/Exo-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
     font-family: Roboto;
 }
 
@@ -24,6 +43,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--main-color);
 }
 
 p {
@@ -37,7 +57,7 @@ p {
 header {
     .top-header {
         padding: 13px 0;
-        border: 0.2px solid var(--main-color);
+        border-bottom: 0.2px solid var(--main-color);
         p,
         ul li.text {
             color: var(--main-color);
@@ -78,6 +98,177 @@ header {
             }
         }
     }
+    .middle-header {
+        border-bottom: 0.2px solid var(--main-color);
+        .logo {
+            padding: 10px 0;
+            img {
+                width: 100px;
+                height: 50px;
+            }
+        }
+        nav {
+            padding: 25px 0;
+            ul {
+                li {
+                    padding-right: 35px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+        ul.social-media {
+            padding: 20px 0;
+            li {
+                padding-right: 15px;
+                margin-right: 15px;
+                &:first-child {
+                    font-family: Exo;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                &:last-child {
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+                &.after-group::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 1px;
+                    height: 40px;
+                    background: var(--main-color);
+                    margin-top: -7px;
+                }
+                a.social-media-icon {
+                    text-align: center;
+                    &.whatsapp {
+                        background: #1bd741;
+                    }
+                    &.telegram {
+                        background: #61a8de;
+                        margin-right: 10px;
+                    }
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 5px;
+                    padding: 3.6px;
+                    color: #ffffff;
+                    i {
+                        vertical-align: top;
+                    }
+                }
+                &.user-icons {
+                    a {
+                        margin-right: 25px;
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-header {
+        padding: 20px 0;
+        border-bottom: 0.2px solid var(--main-color);
+        nav {
+            ul {
+                li {
+                    padding-right: 76px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 19px;
+                        i {
+                            padding-left: 10px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .search {
+            width: 200px;
+            height: 30px;
+            overflow: hidden;
+            background: #ffffff;
+            border: 0.2px solid #103742;
+            border-radius: 15px;
+            i {
+                position: absolute;
+                left: 20px;
+                top: 7px;
+                height: 16px;
+                margin-top: -3px;
+                width: 16px;
+                line-height: 25px;
+                color: var(--main-color);
+                cursor: pointer;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                outline: none;
+                border: none;
+                padding-left: 45px;
+            }
+        }
+    }
 }
 
 /* Header end */
+
+/* Media query start */
+@media only screen and (max-width: 992px) {
+    header {
+        .middle-header {
+            nav {
+                ul {
+                    li {
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+        .bottom-header {
+            .search {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        .bottom-header {
+            nav {
+                ul {
+                    li {
+                        padding-right: 40px;
+                    }
+                }
+            }
+            .search {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Media query end */
