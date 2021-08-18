@@ -1,5 +1,7 @@
 /* Default start */
 
+$active-color: #962689;
+
 :root {
     --main-color: #103742;
 }
@@ -31,7 +33,7 @@
 }
 
 body {
-    background: #E5E5E5;
+    background: #e5e5e5;
     font-family: Roboto;
 }
 
@@ -44,10 +46,22 @@ ul {
 a {
     text-decoration: none;
     color: var(--main-color);
+    transition: all 0.3s;
+    &:hover {
+        color: #962689;
+    }
 }
 
 p {
     margin: 0;
+}
+
+.px-150 {
+    padding: 0 150px;
+}
+
+.active {
+    color: $active-color;
 }
 
 /* Default end */
@@ -231,6 +245,46 @@ header {
 }
 
 /* Header end */
+
+/* Main start */
+main {
+    .breadcrumb {
+        padding: 20px 0;
+        li {
+            font-size: 14px;
+            line-height: 16px;
+            &:not(:last-child)::after {
+                content: "/";
+                display: inline-block;
+                width: 1px;
+                height: 20px;
+                margin: 0 10px;
+            }
+            a {
+                color: #a9a9a9;
+                &:hover {
+                    color: $active-color;
+                }
+            }
+        }
+    }
+
+    #product-detail {
+        .section-title {
+            margin-bottom: 25px;
+            h2 {
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+/* Main end */
 
 /* Media query start */
 @media only screen and (max-width: 992px) {
