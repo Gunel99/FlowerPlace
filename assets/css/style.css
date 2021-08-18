@@ -1,0 +1,46 @@
+/* Default start */
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+    --main-color: #103742;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Default end */
+
+/* Header start */
+
+header p,
+header ul li.text {
+    color: var(--main-color);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+header ul li {
+    border-right: 1px solid var(--main-color);
+}
+
+header ul li:last-child {
+    border-right: 0;
+}
+
+/* Header end */
