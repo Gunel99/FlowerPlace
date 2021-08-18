@@ -1,46 +1,82 @@
 /* Default start */
-
-@font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+:root {
+  --main-color: #103742;
 }
 
-:root {
-    --main-color: #103742;
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 /* Default end */
-
 /* Header start */
-
-header p,
-header ul li.text {
-    color: var(--main-color);
-    font-size: 12px;
-    line-height: 14px;
+header .top-header {
+  padding: 13px 0;
+  border: 0.2px solid var(--main-color);
 }
 
-header ul li {
-    border-right: 1px solid var(--main-color);
+header .top-header p,
+header .top-header ul li.text {
+  color: var(--main-color);
+  font-size: 12px;
+  line-height: 14px;
 }
 
-header ul li:last-child {
-    border-right: 0;
+header .top-header ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-left: 18px;
+}
+
+header .top-header ul li.begin-group::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  height: 20px;
+  background: var(--main-color);
+}
+
+header .top-header ul li i[class$="facebook"] {
+  padding-right: 20px;
+}
+
+header .top-header ul img {
+  margin: -13px 0;
+}
+
+header .top-header ul img.maestro-img {
+  width: 43px;
+  height: 20px;
+}
+
+header .top-header ul img.visa-logo-img {
+  width: 48px;
+  height: 48px;
 }
 
 /* Header end */
+/*# sourceMappingURL=style.css.map */

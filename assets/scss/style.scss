@@ -1,0 +1,83 @@
+/* Default start */
+
+:root {
+    --main-color: #103742;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+/* Default end */
+
+/* Header start */
+
+header {
+    .top-header {
+        padding: 13px 0;
+        border: 0.2px solid var(--main-color);
+        p,
+        ul li.text {
+            color: var(--main-color);
+            font-size: 12px;
+            line-height: 14px;
+        }
+        ul {
+            li {
+                position: relative;
+                padding-left: 18px;
+                margin-left: 18px;
+                &.begin-group::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 1px;
+                    height: 20px;
+                    background: var(--main-color);
+                }
+                i {
+                    &[class$="facebook"] {
+                        padding-right: 20px;
+                    }
+                }
+            }
+            img {
+                margin: -13px 0;
+                &.maestro-img {
+                    width: 43px;
+                    height: 20px;
+                }
+                &.visa-logo-img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
+
+/* Header end */
