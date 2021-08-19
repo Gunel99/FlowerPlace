@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Default start */
 :root {
   --main-color: #103742;
@@ -31,6 +32,7 @@
 
 body {
   background: #e5e5e5;
+  color: var(--main-color);
   font-family: Roboto;
 }
 
@@ -56,6 +58,10 @@ p {
 
 .px-150 {
   padding: 0 150px;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 .active {
@@ -300,6 +306,313 @@ main #product-detail .section-title h2 {
 main #product-detail .section-title p {
   font-size: 14px;
   line-height: 22px;
+}
+
+main #tab-menu .menus {
+  background: #ffffff;
+  border: 0.2px solid #103742;
+  border-radius: 5px;
+}
+
+main #tab-menu .menus .menu {
+  padding: 13px 50px;
+  font-family: RobotoBold;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+main #tab-menu .menus .menu:first-child {
+  padding-left: 40px;
+}
+
+main #tab-menu .menus .menu.selected {
+  color: #962689;
+}
+
+main #tab-menu .contents {
+  padding: 30px 0;
+}
+
+main #tab-menu .contents .content {
+  padding-top: 5px;
+}
+
+main #tab-menu .contents .content h3 {
+  margin-bottom: 20px;
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+main #tab-menu .contents .content ul {
+  max-width: 400px;
+}
+
+main #tab-menu .contents .content ul li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+main #tab-menu .contents .content ul li span {
+  float: right;
+}
+
+main #tab-menu .contents .content ul li span::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+  background: var(--main-color);
+}
+
+main #tab-menu .contents .content p {
+  margin-top: -5px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+main #tab-menu .contents .content .comments {
+  padding: 0 16.5px;
+  background: #ffffff;
+}
+
+main #tab-menu .contents .content .comments .slick-slide {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin: 0 13.5px !important;
+}
+
+main #tab-menu .contents .content .comments .slick-prev {
+  display: none !important;
+}
+
+main #tab-menu .contents .content .comments .slick-next {
+  display: none !important;
+}
+
+main #tab-menu .contents .content .comments .comment {
+  position: relative;
+  padding: 25px 10px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  gap: 44px;
+}
+
+main #tab-menu .contents .content .comments .comment .quote-icons {
+  display: flex;
+  position: absolute;
+  top: -16.38px;
+  left: 12px;
+}
+
+main #tab-menu .contents .content .comments .comment .quote-icons img {
+  width: 16.67px;
+  height: 30.24px;
+  margin-right: 2px;
+}
+
+main #tab-menu .contents .content .comments .comment p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+main #tab-menu .contents .content .comments .comment p:last-child {
+  margin-bottom: 10px;
+}
+
+main #tab-menu .contents .content .prev-next-icons {
+  position: relative;
+  padding-top: 20px;
+}
+
+main #tab-menu .contents .content .prev-next-icons .slick-p {
+  position: absolute;
+  right: -50px;
+  bottom: 230px;
+  border: none;
+  background: #fff;
+}
+
+main #tab-menu .contents .content .prev-next-icons .slick-p::before {
+  content: "❮" !important;
+  font-size: 25px;
+  padding: 8px 16px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+main #tab-menu .contents .content .prev-next-icons .slick-n {
+  position: absolute;
+  right: -50px;
+  bottom: 274px;
+  border: none;
+  background: #fff;
+}
+
+main #tab-menu .contents .content .prev-next-icons .slick-n::before {
+  content: "❯" !important;
+  font-size: 25px;
+  padding: 8px 16px;
+  color: var(--main-color);
+}
+
+main #gifts {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+main #gifts .section-title {
+  padding: 0 25px;
+}
+
+main #gifts .section-title h3 {
+  font-family: RobotoBold;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+main #gifts .gifts .slick-slide {
+  margin: 0 12.5px;
+  position: relative;
+}
+
+main #gifts .gifts .slick-next,
+main #gifts .gifts .slick-prev {
+  display: none !important;
+}
+
+main #gifts .gifts .gift {
+  border: 0.5px solid #e2e2e2;
+  border-radius: 5px;
+  max-width: 200px;
+  height: 244px;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main #gifts .gifts .gift img {
+  display: none;
+}
+
+main #gifts .gifts .gift .gift-info {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+main #gifts .gifts .gift .gift-info > * {
+  z-index: 99;
+}
+
+main #gifts .gifts .gift .gift-info h3 {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 40px;
+  margin-bottom: 3px;
+}
+
+main #gifts .gifts .gift .gift-info p {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 46px 47px 46px;
+}
+
+main #gifts .gifts .gift .gift-info span {
+  font-family: RobotoBold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+main #gifts .gifts .gift .gift-info::after {
+  content: "";
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+main #gifts .gifts .gift .gift-info .gift-button {
+  margin-top: 10px;
+}
+
+main #gifts .gifts .gift .gift-info .gift-button a {
+  display: inline-block;
+  background: #962689;
+  padding: 8px 27px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+main #gifts .gifts .gift:hover .gift-info {
+  top: 0;
+}
+
+main #gifts .prev-next-icons {
+  position: relative;
+  padding-top: 20px;
+}
+
+main #gifts .prev-next-icons .slick-p {
+  position: absolute;
+  right: -15px;
+  bottom: 193px;
+  border: 1px solid #e2e2e2;
+  padding: 11px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #gifts .prev-next-icons .slick-p::before {
+  content: "❮" !important;
+  font-size: 16px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+main #gifts .prev-next-icons .slick-n {
+  position: absolute;
+  right: -15px;
+  bottom: 235px;
+  border: 1px solid #e2e2e2;
+  padding: 11px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #gifts .prev-next-icons .slick-n::before {
+  content: "❯" !important;
+  font-size: 16px;
+  color: var(--main-color);
 }
 
 /* Main end */

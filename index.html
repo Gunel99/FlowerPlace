@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/fonts/icofont/icofont.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <title>Flower Place</title>
 </head>
 
@@ -121,6 +123,7 @@
 
     <!-- Main start -->
     <main>
+        <!-- Breadcrumb start -->
         <div class="container">
             <ul class="breadcrumb m-0">
                 <li><a href="#">Flower place</a></li>
@@ -129,6 +132,9 @@
                 <li>Нежность</li>
             </ul>
         </div>
+        <!-- Breadcrumb end -->
+
+        <!-- Product detail start -->
         <section id="product-detail" class="px-150">
             <div class="container">
                 <div class="row">
@@ -142,6 +148,212 @@
                 </div>
             </div>
         </section>
+        <!-- Product detail end -->
+
+        <!-- Tab menu start -->
+        <section id="tab-menu" class="px-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="menus d-flex">
+                            <div class="menu selected" data-id="1">
+                                Описание
+                            </div>
+                            <div class="menu carousel-menu" data-id="2">
+                                Отзыв
+                            </div>
+                            <div class="menu" data-id="3">
+                                Совет
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <div class="content" data-id="1">
+                                <h3>Состав букета</h3>
+                                <ul>
+                                    <li>Эвкалипт Цинерия<span>1 шт</span></li>
+                                    <li>Лента атлас<span>1 шт</span></li>
+                                    <li>Писташ<span>1 шт</span></li>
+                                    <li>Гербера<span>1 шт</span></li>
+                                    <li>Фоамиран<span>1 шт</span></li>
+                                    <li>Крафт дизайнерский<span>1 шт</span></li>
+                                    <li>Высота букета, см.: 45 см</li>
+                                </ul>
+                            </div>
+                            <div class="content d-none" data-id="2">
+                                <h3>Отзывы</h3>
+                                <div class="comments w-100 d-flex multiple-items">
+                                    <div class="comment d-flex flex-column justify-content-between">
+                                        <div class="quote-icons">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                        </div>
+                                        <p>
+                                            “ Большое спасибо,
+                                            прекрасный букет. Доставили
+                                            во время. Хорошая обраная связь.
+                                            Приятные цены. “
+                                        </p>
+                                        <p>Александр Петрович</p>
+                                    </div>
+                                    <div class="comment d-flex flex-column justify-content-between">
+                                        <div class="quote-icons">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                        </div>
+                                        <p>
+                                            “ Большое спасибо,
+                                            прекрасный букет. Доставили
+                                            во время. Хорошая обраная связь.
+                                            Приятные цены. “
+                                        </p>
+                                        <p>Александр Петрович</p>
+                                    </div>
+                                    <div class="comment d-flex flex-column justify-content-between">
+                                        <div class="quote-icons">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                        </div>
+                                        <p>
+                                            “ Большое спасибо,
+                                            прекрасный букет. Доставили
+                                            во время. Хорошая обраная связь.
+                                            Приятные цены. “
+                                        </p>
+                                        <p>Александр Петрович</p>
+                                    </div>
+                                    <div class="comment d-flex flex-column justify-content-between">
+                                        <div class="quote-icons">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                        </div>
+                                        <p>
+                                            “ Большое спасибо,
+                                            прекрасный букет. Доставили
+                                            во время. Хорошая обраная связь.
+                                            Приятные цены. “
+                                        </p>
+                                        <p>Александр Петрович</p>
+                                    </div>
+                                    <div class="comment d-flex flex-column justify-content-between">
+                                        <div class="quote-icons">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                            <img src="./assets/img/quote.png" alt="Quote icon">
+                                        </div>
+                                        <p>
+                                            “ Большое спасибо,
+                                            прекрасный букет. Доставили
+                                            во время. Хорошая обраная связь.
+                                            Приятные цены. “
+                                        </p>
+                                        <p>Александр Петрович</p>
+                                    </div>
+                                </div>
+                                <div class="prev-next-icons">
+                                    <button class="slick-p" aria-label="Previous" type="button" style>
+
+                                    </button>
+                                    <button class="slick-n" aria-label="Next" type="button" style>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="content d-none" data-id="3">
+                                <h3>Совет от профессионала</h3>
+                                <p>
+                                    Ч тобы ваши цветы были свежими, они могут прибыть в виде бутонов. <br>
+                                    Это продлевает срок их хранения и прослужит как можно дольше! <br>
+                                    Подождите 2-3 дня, чтобы ваши новые бутоны раскрылись и полностью распустились.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tab menu end -->
+
+        <!-- Gifts start -->
+        <section id="gifts" class="px-150 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h3>Подарки для вас</h3>
+                    </div>
+                    <div class="gifts w-100 d-flex multiple-items">
+                        <div class="gift">
+                            <img src="https://picsum.photos/600/600?v=1" alt="Gift 1">
+                            <div class="gift-info d-flex flex-column">
+                                <h3>Мишка Teddy</h3>
+                                <p>порадует ваших
+                                    близких</p>
+                                <span>2330 руб</span>
+                                <div class="gift-button">
+                                    <a href="#">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="https://picsum.photos/600/600?v=2" alt="Gift 2">
+                            <div class="gift-info d-flex flex-column">
+                                <h3>Мишка Teddy</h3>
+                                <p>порадует ваших
+                                    близких</p>
+                                <span>2330 руб</span>
+                                <div class="gift-button">
+                                    <a href="#">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="https://picsum.photos/600/600?v=3" alt="Gift 3">
+                            <div class="gift-info d-flex flex-column">
+                                <h3>Мишка Teddy</h3>
+                                <p>порадует ваших
+                                    близких</p>
+                                <span>2330 руб</span>
+                                <div class="gift-button">
+                                    <a href="#">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="https://picsum.photos/600/600?v=4" alt="Gift 4">
+                            <div class="gift-info d-flex flex-column">
+                                <h3>Мишка Teddy</h3>
+                                <p>порадует ваших
+                                    близких</p>
+                                <span>2330 руб</span>
+                                <div class="gift-button">
+                                    <a href="#">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="https://picsum.photos/600/600?v=5" alt="Gift 4">
+                            <div class="gift-info d-flex flex-column ">
+                                <h3>Мишка Teddy</h3>
+                                <p>порадует ваших
+                                    близких</p>
+                                <span>2330 руб</span>
+                                <div class="gift-button">
+                                    <a href="#">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prev-next-icons">
+                        <button class="slick-p" aria-label="Previous" type="button" style>
+
+                        </button>
+                        <button class="slick-n" aria-label="Next" type="button" style>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gifts end -->
+
     </main>
     <!-- Main end -->
 
@@ -150,6 +362,18 @@
     <!-- Footer end -->
 
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/544d51816e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
