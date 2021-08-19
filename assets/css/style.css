@@ -615,6 +615,71 @@ main #gifts .prev-next-icons .slick-n::before {
   color: var(--main-color);
 }
 
+main #shipping-and-payment {
+  margin-top: 70px;
+}
+
+main #shipping-and-payment .section-title h3 {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+main #shipping-and-payment .shippings {
+  margin-top: 38px;
+}
+
+main #shipping-and-payment .shippings .shipping {
+  margin-right: 53px;
+}
+
+main #shipping-and-payment .shippings .shipping .img {
+  margin-bottom: 30px;
+}
+
+main #shipping-and-payment .shippings .shipping .img img {
+  width: 48.24px;
+  height: 44.96px;
+}
+
+main #shipping-and-payment .shippings .shipping .img img.bus {
+  width: 60px;
+  height: 37.95px;
+}
+
+main #shipping-and-payment .shippings .shipping .img img.flower {
+  width: 42.99px;
+  height: 43px;
+}
+
+main #shipping-and-payment .shippings .shipping .img.box {
+  margin-bottom: 27.74px;
+}
+
+main #shipping-and-payment .shippings .shipping .description h4.title {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+main #shipping-and-payment .shippings .shipping .description p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+main #shipping-and-payment .shippings .shipping .description p.second-paragraph {
+  padding-right: 10px;
+}
+
+main #shipping-and-payment .shippings .shipping .description p.third-paragraph {
+  padding-right: 11px;
+}
+
+main #shipping-and-payment .shippings .shipping.last-shipping {
+  margin-right: 0;
+}
+
 /* Main end */
 /* Media query start */
 @media only screen and (max-width: 992px) {
