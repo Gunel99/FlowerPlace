@@ -290,6 +290,7 @@ main {
     }
 
     #tab-menu {
+        margin-top: 80px;
         .menus {
             background: #ffffff;
             border: 0.2px solid #103742;
@@ -309,7 +310,7 @@ main {
             }
         }
         .contents {
-            padding: 30px 0;
+            padding: 30px 0 70px 0;
             .content {
                 padding-top: 5px;
                 h3 {
@@ -443,9 +444,8 @@ main {
                 display: none !important;
             }
             .gift {
-                border: 0.5px solid #e2e2e2;
                 border-radius: 5px;
-                max-width: 200px;
+                border: 1px solid #e2e2e2;
                 height: 244px;
                 position: relative;
                 overflow: hidden;
@@ -453,7 +453,9 @@ main {
                 background-repeat: no-repeat;
                 background-position: center;
                 img {
-                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
                 .gift-info {
                     position: absolute;
@@ -493,7 +495,6 @@ main {
                         right: 0;
                         top: 0;
                         bottom: 0;
-                        // border: 0.5px solid #e2e2e2;
                     }
                     .gift-button {
                         margin-top: 10px;
@@ -613,10 +614,273 @@ main {
             }
         }
     }
+
+    #delivery-options {
+        margin-top: 30px;
+        .delivery-options {
+            padding: 30px;
+            .section-title {
+                margin-bottom: 35px;
+                h3 {
+                    font-family: RobotoBold;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .deliveries {
+            .delivery {
+                h4 {
+                    font-family: RobotoBold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+                &:first-child {
+                    ul.menu {
+                        margin-bottom: 40px;
+                    }
+                }
+                ul {
+                    li {
+                        font-size: 14px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                        position: relative;
+                        margin-left: 25px;
+                        &::before {
+                            content: "•";
+                            color: $active-color;
+                            position: absolute;
+                            top: 1px;
+                            left: -25px;
+                            width: 10px;
+                            height: 10px;
+                            font-size: 40px;
+                        }
+                        .sub-menu {
+                            margin-top: 10px;
+                            li {
+                                margin-left: 0;
+                                &::before {
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #payment-options {
+        padding-top: 30px;
+        margin-bottom: 70px;
+        .section-title {
+            padding: 0;
+            h3 {
+                font-family: RobotoBold;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 7px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .payments {
+            margin-top: 40px;
+            .payment {
+                h4 {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    font-family: RobotoBold;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                img {
+                    width: 25.97px;
+                    height: 30.27px;
+                    &.gpay {
+                        width: 50px;
+                        height: 20px;
+                    }
+                    &.apay {
+                        width: 51.04px;
+                        height: 24px;
+                    }
+                    &.second-payment {
+                        width: 31px;
+                        height: 31px;
+                    }
+                    &.third-payment {
+                        width: 29.2px;
+                        height: 19.46px;
+                    }
+                    &.fourth-payment {
+                        width: 28.04px;
+                        height: 12.23px;
+                    }
+                }
+            }
+        }
+    }
 }
 /* Main end */
 
+/* Footer start */
+footer {
+    .top-footer {
+        padding-top: 40px;
+        border-bottom: 1px solid #c9c9c9;
+        ul {
+            h4 {
+                font-family: RobotoBold;
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 15px;
+            }
+            li {
+                font-size: 16px;
+                line-height: 19px;
+                padding-bottom: 10px;
+                &.maestro-visa {
+                    padding-top: 83px;
+                    padding-bottom: 0;
+                }
+                i {
+                    margin-right: 8.65px;
+                }
+                address {
+                    p {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    span {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                img {
+                    width: 120px;
+                    height: 60px;
+                    margin-bottom: 10px;
+                }
+                p.copyright {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-bottom: 50px;
+                }
+                &.phone-number {
+                    font-family: Exo;
+                    font-size: 18px;
+                    line-height: 24px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -4px;
+                        right: 0;
+                        width: 150px;
+                        height: 1px;
+                        background-color: #c9c9c9;
+                    }
+                }
+                &.social-media {
+                    margin-top: 10.76px;
+                    a {
+                        &.social-media-icon {
+                            text-align: center;
+                            width: 22.47px;
+                            height: 22.5px;
+                            display: inline-block;
+                            border-radius: 5px;
+                            padding: 3.6px;
+                            color: #ffffff;
+                            margin-right: 5px;
+                            &.whatsapp {
+                                background: #1bd741;
+                            }
+                            &.telegram {
+                                background: #61a8de;
+                            }
+                            &.facebook {
+                                background: #2968cc;
+                                padding-bottom: 0;
+                                i {
+                                    vertical-align: bottom !important;
+                                }
+                            }
+                            &.instagram {
+                                background: linear-gradient(49.12deg, #ffdd55 6.62%, #ff543e 50.06%, #c837ab 93.5%);
+                            }
+                            &.vk {
+                                background: #4c75a3;
+                                margin-right: 0;
+                            }
+                            i {
+                                vertical-align: top;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    &.user-icons {
+                        a {
+                            margin-right: 25px;
+                            &:first-child {
+                                margin-left: 10px;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        ul {
+            padding: 9px 0;
+        }
+    }
+}
+/* Footer end */
+
 /* Media query start */
+
+@media only screen and (max-width: 768px) {
+    footer {
+        .top-footer {
+            ul {
+                li {
+                    &.maestro-visa {
+                        padding-top: 30px;
+                    }
+                    &.phone-number {
+                        &::after {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    main {
+        #tab-menu {
+            .menus {
+                .menu {
+                    padding: 13px 20px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     header {
         .middle-header {
@@ -636,6 +900,18 @@ main {
     }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    main {
+        #tab-menu {
+            .menus {
+                .menu {
+                    padding: 13px 30px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     header {
         .bottom-header {
@@ -649,6 +925,25 @@ main {
             .search {
                 input {
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 992px) {
+    main {
+        #shipping-and-payment {
+            .shippings {
+                .shipping {
+                    .description {
+                        h4.title {
+                            font-size: 15px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }

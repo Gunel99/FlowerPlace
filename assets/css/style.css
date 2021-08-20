@@ -308,6 +308,10 @@ main #product-detail .section-title p {
   line-height: 22px;
 }
 
+main #tab-menu {
+  margin-top: 80px;
+}
+
 main #tab-menu .menus {
   background: #ffffff;
   border: 0.2px solid #103742;
@@ -331,7 +335,7 @@ main #tab-menu .menus .menu.selected {
 }
 
 main #tab-menu .contents {
-  padding: 30px 0;
+  padding: 30px 0 70px 0;
 }
 
 main #tab-menu .contents .content {
@@ -490,9 +494,8 @@ main #gifts .gifts .slick-prev {
 }
 
 main #gifts .gifts .gift {
-  border: 0.5px solid #e2e2e2;
   border-radius: 5px;
-  max-width: 200px;
+  border: 1px solid #e2e2e2;
   height: 244px;
   position: relative;
   overflow: hidden;
@@ -502,7 +505,9 @@ main #gifts .gifts .gift {
 }
 
 main #gifts .gifts .gift img {
-  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main #gifts .gifts .gift .gift-info {
@@ -680,8 +685,276 @@ main #shipping-and-payment .shippings .shipping.last-shipping {
   margin-right: 0;
 }
 
+main #delivery-options {
+  margin-top: 30px;
+}
+
+main #delivery-options .delivery-options {
+  padding: 30px;
+}
+
+main #delivery-options .delivery-options .section-title {
+  margin-bottom: 35px;
+}
+
+main #delivery-options .delivery-options .section-title h3 {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+main #delivery-options .deliveries .delivery h4 {
+  font-family: RobotoBold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+main #delivery-options .deliveries .delivery:first-child ul.menu {
+  margin-bottom: 40px;
+}
+
+main #delivery-options .deliveries .delivery ul li {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 25px;
+}
+
+main #delivery-options .deliveries .delivery ul li::before {
+  content: "•";
+  color: #962689;
+  position: absolute;
+  top: 1px;
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  font-size: 40px;
+}
+
+main #delivery-options .deliveries .delivery ul li .sub-menu {
+  margin-top: 10px;
+}
+
+main #delivery-options .deliveries .delivery ul li .sub-menu li {
+  margin-left: 0;
+}
+
+main #delivery-options .deliveries .delivery ul li .sub-menu li::before {
+  content: "";
+}
+
+main #payment-options {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+main #payment-options .section-title {
+  padding: 0;
+}
+
+main #payment-options .section-title h3 {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+
+main #payment-options .section-title p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+main #payment-options .payments {
+  margin-top: 40px;
+}
+
+main #payment-options .payments .payment h4 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+main #payment-options .payments .payment img {
+  width: 25.97px;
+  height: 30.27px;
+}
+
+main #payment-options .payments .payment img.gpay {
+  width: 50px;
+  height: 20px;
+}
+
+main #payment-options .payments .payment img.apay {
+  width: 51.04px;
+  height: 24px;
+}
+
+main #payment-options .payments .payment img.second-payment {
+  width: 31px;
+  height: 31px;
+}
+
+main #payment-options .payments .payment img.third-payment {
+  width: 29.2px;
+  height: 19.46px;
+}
+
+main #payment-options .payments .payment img.fourth-payment {
+  width: 28.04px;
+  height: 12.23px;
+}
+
 /* Main end */
+/* Footer start */
+footer .top-footer {
+  padding-top: 40px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+footer .top-footer ul h4 {
+  font-family: RobotoBold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+footer .top-footer ul li {
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+
+footer .top-footer ul li.maestro-visa {
+  padding-top: 83px;
+  padding-bottom: 0;
+}
+
+footer .top-footer ul li i {
+  margin-right: 8.65px;
+}
+
+footer .top-footer ul li address p {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+footer .top-footer ul li address span {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+footer .top-footer ul li img {
+  width: 120px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+footer .top-footer ul li p.copyright {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 50px;
+}
+
+footer .top-footer ul li.phone-number {
+  font-family: Exo;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+}
+
+footer .top-footer ul li.phone-number::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 150px;
+  height: 1px;
+  background-color: #c9c9c9;
+}
+
+footer .top-footer ul li.social-media {
+  margin-top: 10.76px;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon {
+  text-align: center;
+  width: 22.47px;
+  height: 22.5px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3.6px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.whatsapp {
+  background: #1bd741;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.telegram {
+  background: #61a8de;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.facebook {
+  background: #2968cc;
+  padding-bottom: 0;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.facebook i {
+  vertical-align: bottom !important;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.instagram {
+  background: linear-gradient(49.12deg, #ffdd55 6.62%, #ff543e 50.06%, #c837ab 93.5%);
+}
+
+footer .top-footer ul li.social-media a.social-media-icon.vk {
+  background: #4c75a3;
+  margin-right: 0;
+}
+
+footer .top-footer ul li.social-media a.social-media-icon i {
+  vertical-align: top;
+  margin-right: 0;
+}
+
+footer .top-footer ul li.social-media.user-icons a {
+  margin-right: 25px;
+}
+
+footer .top-footer ul li.social-media.user-icons a:first-child {
+  margin-left: 10px;
+}
+
+footer .top-footer ul li.social-media.user-icons a:last-child {
+  margin-right: 0;
+}
+
+footer .bottom-footer ul {
+  padding: 9px 0;
+}
+
+/* Footer end */
 /* Media query start */
+@media only screen and (max-width: 768px) {
+  footer .top-footer ul li.maestro-visa {
+    padding-top: 30px;
+  }
+  footer .top-footer ul li.phone-number::after {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  main #tab-menu .menus .menu {
+    padding: 13px 20px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   header .middle-header nav ul li {
     padding-right: 30px;
@@ -691,12 +964,27 @@ main #shipping-and-payment .shippings .shipping.last-shipping {
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  main #tab-menu .menus .menu {
+    padding: 13px 30px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   header .bottom-header nav ul li {
     padding-right: 40px;
   }
   header .bottom-header .search input {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 992px) {
+  main #shipping-and-payment .shippings .shipping .description h4.title {
+    font-size: 15px;
+  }
+  main #shipping-and-payment .shippings .shipping .description p {
+    font-size: 12px;
   }
 }
 

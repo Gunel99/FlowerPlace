@@ -22,21 +22,21 @@ for (let menu of menus) {
             autoplaySpeed: 4000,
             responsive: [
               {
-                breakpoint: 1040,
+                breakpoint: 1200,
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 3,
                 },
               },
               {
-                breakpoint: 800,
+                breakpoint: 992,
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 2,
                 },
               },
               {
-                breakpoint: 530,
+                breakpoint: 768,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
@@ -67,21 +67,21 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     responsive: [
       {
-        breakpoint: 1040,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 530,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -91,11 +91,6 @@ $(document).ready(function () {
   });
 
   // Gifts carousel start
-
-  $('#gifts .gift img').each((index, item) => {
-    let imageUrl = $(item).attr('src');
-    $(item).parent().css('background-image', `url(${imageUrl})`);
-  });
 
   $("#gifts .prev-next-icons button.slick-n").click(function () {
     $("#gifts .gifts").slick("slickNext");
@@ -111,21 +106,21 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     responsive: [
       {
-        breakpoint: 1040,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 530,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
